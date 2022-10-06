@@ -10,6 +10,7 @@ class Company(models.Model):
     earns_upwork = models.IntegerField(default=0)
     benefits = models.CharField(max_length=255, null=True, blank=True)
     contact_us = models.CharField(max_length=255, null=True, blank=True)
+    is_active = models.BooleanField(default=False)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
